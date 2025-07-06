@@ -16,11 +16,11 @@
       ignore_errors: yes
 
     - name: build docker image using the Dockerfile
-      command: docker build -t triple3a/comingsoon-page .
+      command: docker build -t m7moudelgazzar/comingsoon-page .
 
     - name: Push Image to dockerhub
       command: docker push m7moudelgazzar/comingsoon-page
 
     - name: run container
-      command: docker run -d --name web-container -p 5000:80 triple3a/comingsoon-page
+      command: docker run -d --name web-container -p 5000:80 m7moudelgazzar/comingsoon-page
 
